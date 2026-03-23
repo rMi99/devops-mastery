@@ -1,4 +1,4 @@
-# Runbook — Deploy HTML, Node.js, and PHP Apps on AWS EC2
+# Runbook - Deploy HTML, Node.js, and PHP Apps on AWS EC2
 
 ## Goal
 
