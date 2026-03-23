@@ -1,4 +1,4 @@
-# **Runbook — Networking & Git Fundamentals (DevOps Week 2)**
+# **Runbook - Networking & Git Fundamentals (DevOps Week 2)**
 
 ## 🎯 Goal
 
