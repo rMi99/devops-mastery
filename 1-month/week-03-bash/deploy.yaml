@@ -1,0 +1,20 @@
+name: Deploy
+on:
+ push:  
+    branches:
+     - lec # assign ur branch name here
+jobs:
+ deploy:
+   runs-on: ubuntu-latest
+   steps:
+     - uses: actions/checkout@v3
+     - name: Deploy to server
+       uses: appleboy/ssh-action@master
+       with:
+         host: ${{ secrets.EC2_HOST }}
+         username: ubuntu # dobt hard code thease values  because if you want to deploy to multiple servers you can use the same action but with different values
+         port: 22 #and also it not secure
+         key: ${{ secrets.EC2_KEY }} cat your pem.key file here 
+         script: "bash /var/www/test-devOps-git/deploy.sh" #this is the script that will be executed on the server
+         #you can also use a script file or a script command
+         #you can also use a script file or a script command
