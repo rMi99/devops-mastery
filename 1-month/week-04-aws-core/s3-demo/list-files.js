@@ -1,6 +1,7 @@
 import { S3Client, ListObjectsV2Command } from "@aws-sdk/client-s3";
 
-// ⚠️ Hardcoded credentials (NOT recommended for production)
+// ⚠️ Hardcoded credentials (NOT recommended for production | 
+//  ⚠️⚠️⚠️⚠️ dont push with your credentials to the repo ⚠️⚠️⚠️⚠️
 const s3 = new S3Client({
   region: "us-east-1",
   credentials: {
